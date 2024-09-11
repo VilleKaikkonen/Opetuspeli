@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour
     void Awake() {
         if (gameManager == null)
         {
-            Debug.Log("Preserving GameManager!");
+            // Debug.Log("Preserving GameManager!");
             gameManager = this;
             DontDestroyOnLoad(this);
         } else if (gameManager != this)
         {
-            Debug.Log("Destroying GameManager!");
+            // Debug.Log("Destroying GameManager!");
             Destroy(gameObject);
         }
     }
