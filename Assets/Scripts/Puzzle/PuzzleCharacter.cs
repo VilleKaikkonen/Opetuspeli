@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+Author: Ville Kaikkonen
+Controls the character's movements in the game.
+*/
 public class PuzzleCharacter : MonoBehaviour
 {
     Transform characterTransform;
@@ -51,12 +55,6 @@ public class PuzzleCharacter : MonoBehaviour
         StartCoroutine("Controller");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // Is used to set control's active state
+    // Used to set control's active state
     public void SetControlsActivity(bool t) { controlsActive = t; }
 }
