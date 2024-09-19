@@ -1,18 +1,25 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "newCharacterData", menuName = "ScriptableObjects/CharacterData", order = 1)]
 public class CharacterDataSO : ScriptableObject
 {
-    public int health;
+    public int maxHealth;
+
     public int dmg;
 
     public Sprite healthBar;
     public Sprite characterImage;
 
+    // public GameObject characterPrefab;
+    // public GameObject healthBarPrefab;
+
+    //public Color characterColor; // different color for each character/enemys
+    //public Color healthBarColor;
+    //public Color healthTextColor;
+
     public CharacterDataSO(int health, int dmg)
     {
-        this.health = health;
+        this.maxHealth = health;
         this.dmg = dmg;
     }
 }

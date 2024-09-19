@@ -1,0 +1,17 @@
+19.9.2024
+Gladitor
+
+1. Add  question damage system
+2. Make player and enemy prefabs
+3. Design Managers to support multiple enemies -> UIManager & GladiatorManager
+4. Add player and enemy animations
+
+
+Other features:
+
+- turn-based combat system (player and enemy)
+- Wizard teacher
+- round system
+- score system
+
+

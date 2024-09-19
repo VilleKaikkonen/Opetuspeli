@@ -5,11 +5,26 @@ using TMPro;
 
 public class QuestionManager : MonoBehaviour
 {
+    public static QuestionManager Instance { get; private set; } // Singleton
+
+
     public QuestionDataSO[] questions; // List of all questions
     public TMP_Text questionText; // UI element for displaying the question
     public Button[] answerButtons; // Buttons for player to answer
 
     private int currentQuestionIndex = 0; //Which question is currently being asked
+
+
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            Debug.LogWarning("More than one instance of QuestionManager found!" + Instance + transform);
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     private void Start()
     {
