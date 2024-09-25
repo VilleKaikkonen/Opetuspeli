@@ -56,5 +56,9 @@ public class PuzzleCharacter : MonoBehaviour
     }
 
     // Used to set control's active state
-    public void SetControlsActivity(bool t) { controlsActive = t; }
+    public void SetControlsActivity(bool t) 
+    { 
+        controlsActive = t; 
+        if (t == true) { StartCoroutine("Controller"); }
+    }
 }
