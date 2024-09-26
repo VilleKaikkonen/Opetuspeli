@@ -9,7 +9,7 @@ Controls the character's movements in the game.
 public class PuzzleCharacter : MonoBehaviour
 {
     Transform characterTransform;
-    float moveSpeed = 3f;
+    [Range(1, 30)][SerializeField] float moveSpeed;
     bool controlsActive;
 
     // Handles character controls

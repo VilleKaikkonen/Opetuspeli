@@ -20,7 +20,8 @@ public class Puzzle1ReactiveObject : MonoBehaviour
             door.SetActive(false);
             collider.GetComponent<Transform>().localPosition 
             = GetComponent<Transform>().localPosition;
-            collider.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            collider.GetComponent<Rigidbody2D>().bodyType 
+            = RigidbodyType2D.Kinematic;
             if (scriptText != null)
             {
                 Color32 newColor = new Color32(255, 0, 13, 255);

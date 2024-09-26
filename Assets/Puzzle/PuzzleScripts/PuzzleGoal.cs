@@ -8,6 +8,8 @@ A simple script that is run when the player character reaches their goal
 */
 public class PuzzleGoal : MonoBehaviour
 {
+    [SerializeField] string nextLevelName;
+
     // Called when a collider enters this object's trigger collider
     void OnTriggerEnter2D(Collider2D collider)
     {
