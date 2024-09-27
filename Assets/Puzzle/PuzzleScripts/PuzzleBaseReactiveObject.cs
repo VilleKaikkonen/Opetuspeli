@@ -13,8 +13,8 @@ public class PuzzleBaseReactiveObject : MonoBehaviour
     {
         objectToLock.GetComponent<Transform>().localPosition
         = GetComponent<Transform>().localPosition;
-        objectToLock.GetComponent<Rigidbody2D>().bodyType 
-        = RigidbodyType2D.Kinematic;
+        Destroy(objectToLock.GetComponent<Rigidbody2D>());
+        Destroy(objectToLock.GetComponent<BoxCollider2D>());
         this.gameObject.SetActive(false);
     }
 }
