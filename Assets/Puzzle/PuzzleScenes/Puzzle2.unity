@@ -3473,13 +3473,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfc359eace8a134ca9b8e3f79248061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctBlock: {fileID: 497120752}
+  correctBlocks:
+  - {fileID: 497120752}
   wrongBlocks:
   - {fileID: 1603300185}
   - {fileID: 1853760277}
   - {fileID: 1039458896}
-  obstacle: {fileID: 1549647065}
-  pathForward: {fileID: 1450308318}
+  siblingTriggers: []
+  obstacles:
+  - {fileID: 1549647065}
+  pathsForward: []
   codeWiz: {fileID: 766620844}
   hintWrong: I think the password is not a secret, but the correct kind of a variable...
   hintRight: Nice going! "open" was the only string variable!
@@ -6649,11 +6652,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfc359eace8a134ca9b8e3f79248061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctBlock: {fileID: 1223475859}
+  correctBlocks:
+  - {fileID: 1223475859}
   wrongBlocks:
   - {fileID: 1171369328}
-  obstacle: {fileID: 1599354230}
-  pathForward: {fileID: 1789516208}
+  siblingTriggers: []
+  obstacles:
+  - {fileID: 1599354230}
+  pathsForward: []
   codeWiz: {fileID: 766620844}
   hintWrong: It doesn't look like a string to me! Try again!
   hintRight: So, the bridge consists of 5 increments marked by integers!
@@ -7534,11 +7540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061265212949113053, guid: ab67518e8859e5a4aa7994a7a30adf27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.31
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3061265212949113053, guid: ab67518e8859e5a4aa7994a7a30adf27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.89
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3061265212949113053, guid: ab67518e8859e5a4aa7994a7a30adf27, type: 3}
       propertyPath: m_LocalPosition.z
