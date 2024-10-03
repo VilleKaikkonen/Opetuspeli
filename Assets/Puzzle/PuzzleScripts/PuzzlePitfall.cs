@@ -13,8 +13,7 @@ public class PuzzlePitfall : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            collider.GetComponent<PuzzleCharacter>().SetControlsActivity(false);
-            collider.GetComponent<SpriteRenderer>().color = Color.clear;
+            collider.GetComponent<PuzzleCharacter>().Death();
             Debug.Log("The player character has fallen into a pitfall.");
         } 
         else

@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 9
+  scream: {fileID: 8300000, guid: ac7f82b4dcebd404089a17bb430b4426, type: 3}
+  puzzleMusic: {fileID: 8300000, guid: 1157f30576aa07a4891658c0a860c18e, type: 3}
 --- !u!61 &6768880258777671741
 BoxCollider2D:
   m_ObjectHideFlags: 0

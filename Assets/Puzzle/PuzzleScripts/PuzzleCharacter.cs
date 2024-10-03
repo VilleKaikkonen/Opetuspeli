@@ -11,6 +11,10 @@ public class PuzzleCharacter : MonoBehaviour
     Transform characterTransform;
     [Range(1, 30)][SerializeField] float moveSpeed;
     bool controlsActive;
+    GameManager gameManager;
+    [SerializeField] AudioClip scream;
+    // Separation by William King
+    [SerializeField] AudioClip puzzleMusic;
 
     // Handles character controls
     IEnumerator Controller()
@@ -50,6 +54,8 @@ public class PuzzleCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+        if (puzzleMusic != null) { gameManager.PlayMusic(puzzleMusic); }
         if (characterTransform == null) { characterTransform = GetComponent<Transform>(); }
         controlsActive = true;
         StartCoroutine("Controller");
@@ -60,5 +66,15 @@ public class PuzzleCharacter : MonoBehaviour
     { 
         controlsActive = t; 
         if (t == true) { StartCoroutine("Controller"); }
+    }
+
+    // Called when the character falls to their death
+    public void Death()
+    {
+        SetControlsActivity(false);
+        GetComponent<PuzzleCharacter>().SetControlsActivity(false);
+        GetComponent<SpriteRenderer>().color = Color.clear;
+        if (scream != null) 
+        { gameManager.PlaySound(scream); }
     }
 }
