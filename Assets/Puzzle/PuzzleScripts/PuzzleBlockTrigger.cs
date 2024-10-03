@@ -28,6 +28,7 @@ public class PuzzleBlockTrigger : PuzzleBaseReactiveObject
     [SerializeField] string hintRight;
     // Counts progress towards full solution
     int correctBlocksInPlace = 0;
+    bool triggerEmpty = true;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +43,7 @@ public class PuzzleBlockTrigger : PuzzleBaseReactiveObject
     // Called when a collider enters this object's trigger collider
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("PuzzleObject"))
+        if (collider.CompareTag("PuzzleObject") && triggerEmpty)
         {
 
             if (correctBlocks.Contains(collider.gameObject))
@@ -80,7 +81,7 @@ public class PuzzleBlockTrigger : PuzzleBaseReactiveObject
                 foreach (GameObject block in correctBlocks)
                 { block.SetActive(false); }
             }
-
+                triggerEmpty = false;
                 LockInObject(collider.gameObject);
         }
     }
