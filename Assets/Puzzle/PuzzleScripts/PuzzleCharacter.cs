@@ -75,6 +75,9 @@ public class PuzzleCharacter : MonoBehaviour
         GetComponent<PuzzleCharacter>().SetControlsActivity(false);
         GetComponent<SpriteRenderer>().color = Color.clear;
         if (scream != null) 
-        { gameManager.PlaySound(scream); }
+        { 
+            if (gameManager == null) gameManager = FindObjectOfType<GameManager>();
+            gameManager.PlaySound(scream); 
+        }
     }
 }

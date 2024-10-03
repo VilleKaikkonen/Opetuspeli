@@ -7781,6 +7781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 656894030778252348, guid: 615b0a0aa6069d7449385b12e5fb973f, type: 3}
+      propertyPath: nextLevelName
+      value: Puzzle3
+      objectReference: {fileID: 0}
     - target: {fileID: 2619917491680021712, guid: 615b0a0aa6069d7449385b12e5fb973f, type: 3}
       propertyPath: m_Name
       value: Goal

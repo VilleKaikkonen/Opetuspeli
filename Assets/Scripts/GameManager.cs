@@ -40,14 +40,17 @@ public class GameManager : MonoBehaviour
 
         if (music != soundPlayer.clip)
         {
-            if (soundPlayer.isPlaying) { soundPlayer.Pause(); }
+            if (soundPlayer.isPlaying) soundPlayer.Pause();
 
             soundPlayer.loop = true;
             soundPlayer.clip = music;
-            soundPlayer.Play();
         }
-        
+
+        if (!soundPlayer.isPlaying) soundPlayer.Play();
     }
+
+    // Stops the currently playing music if any
+    public void PauseMusic() { soundPlayer.Pause(); }
 
     // Plays an audioclip once, without interrupting music
     public void PlaySound(AudioClip sound)
