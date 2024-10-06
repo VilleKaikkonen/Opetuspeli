@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/*
+ Author: Antti Sironen
+CharacterDataSO is a ScriptableObject that holds data for characters and enemies.
+ */
+
 [CreateAssetMenu(fileName = "newCharacterData", menuName = "ScriptableObjects/CharacterData", order = 1)]
 public class CharacterDataSO : ScriptableObject
 {

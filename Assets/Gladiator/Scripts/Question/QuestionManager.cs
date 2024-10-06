@@ -1,7 +1,11 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
+/*
+ Author: Antti Sironen
+Handles questions and answers
+ */
 
 public class QuestionManager : MonoBehaviour
 {

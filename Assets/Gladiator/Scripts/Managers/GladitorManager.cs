@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Author: Antti Sironen
+ */
+
 public class GladitorManager : MonoBehaviour
 {
     public static GladitorManager Instance { get; private set; } // Singleton

@@ -2,6 +2,11 @@ using UnityEngine;
 using System;
 using TMPro;
 
+/*
+ Author: Antti Sironen
+Handles UI elements in the game
+ */
+
 public class UIManagerG : MonoBehaviour
 {
     public static UIManagerG Instance { get; private set; }

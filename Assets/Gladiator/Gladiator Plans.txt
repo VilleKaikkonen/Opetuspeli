@@ -1,5 +1,6 @@
 19.9.2024
 Gladitor
+Antti Sironen
 
 1. Add  question damage system
 2. Make player and enemy prefabs

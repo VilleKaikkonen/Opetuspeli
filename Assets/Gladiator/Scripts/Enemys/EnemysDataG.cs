@@ -1,6 +1,11 @@
 using System;
-using TMPro;
 using UnityEngine;
+
+/*
+ Author: Antti Sironen
+EnemysDataG is a script that holds data for enemies and implements IDamageableG interface.
+This script updates the health value of the enemy and disables the enemy when health reaches zero.
+ */
 
 public class EnemysDataG : MonoBehaviour, IDamageableG
 {
