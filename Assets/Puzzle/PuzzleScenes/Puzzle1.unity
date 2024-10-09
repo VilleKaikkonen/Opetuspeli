@@ -9862,8 +9862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f08e647a2c433e0479a8f752831cc61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: 
-  victoryFanfare: {fileID: 0}
+  nextLevelName: Puzzle2
+  victoryFanfare: {fileID: 8300000, guid: 0f82fd5610a1bec4aa86435b537936ec, type: 3}
 --- !u!61 &994726662
 BoxCollider2D:
   m_ObjectHideFlags: 0
